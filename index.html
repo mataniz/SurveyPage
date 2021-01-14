@@ -1,0 +1,63 @@
+<html>
+<h1 id="title"> Student Survey Form</h1>
+</html>
+<p id="description">A form to collect details from students</p>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+  </div>
+    <div class="form-group">
+    <label id="email-label" for="email">Email Address</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+  </div>
+      <div class="form-group">
+    <label id="number-label" for="email">Contact Number</label>
+    <input type="number" name="number" id="number" min=111111111 max= 9999999999 class="form-control" placeholder="Enter your contact info" required/>
+  </div>
+      <div class="form-group">
+        <p> What describes your current standing at the University?</p>
+        <select id= dropdown name="standing" class=form-control required />
+        <option disabled selected value>Standing</option>
+        <option value= "Freshman">Freshman</option>
+                <option value= "Sophomore">Sophomore</option>
+                <option value= "Junior">Junior</option>
+                <option value= "Senior">Senior</option>
+        </select>
+  </div>
+  <div class= "form-group">
+    <p>What major do you study?</p>
+    <label> <input name="default" value="science" type="radio" class="input-radio" checked /> Science </label>
+    <label> <input name="default" value="engineering" type="radio" class="input-radio" checked /> Engineering </label>
+    <label> <input name="default" value="Commerce" type="radio" class="input-radio" checked /> Commerce </label>
+</div>
+<div class="form-group">
+  <p>What combination of subjects are you taking currently? (Check all that apply)</p>
+  <label>
+    <input name="select" value="math"
+           type="checkbox" class="input-checkbox" />Math</label>
+     <input name="select" value="chemistry" type="checkbox" class="input-checkbox" />Chemistry</label>
+    <input name="select" value="physics"
+           type="checkbox" class="input-checkbox" />Physics</label>
+    <input name="select" value="biology"
+           type="checkbox" class="input-checkbox" />Biology</label>
+    <input name="select" value="accounts"
+           type="checkbox" class="input-checkbox" />Accounts</label>
+    <input name="select" value="economics"
+           type="checkbox" class="input-checkbox" />Economics</label>
+</div>
+
+<div="form-group">
+  <p>Suggestions or Comments </p>
+  <textarea id="comments" class="textarea"
+   name= "comment" placeholder="comments please">
+  </textarea>
+  
+  <div class="form-group">
+    <button type="submit" id="submit"
+            class = "submit-btn">Submit</button>
+  </div>
+  </form>
+</div>
+
+        
